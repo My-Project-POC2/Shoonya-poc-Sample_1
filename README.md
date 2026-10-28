@@ -8,5 +8,7 @@ The project documentation is all on the OWASP site at the <a href="https://owasp
 The current latest release is v1.2. Note that all the releases that are available here: https://github.com/OWASP-Benchmark/BenchmarkJava/releases, are historical. The latest release is always available live by simply cloning or pulling the head of this repository (i.e., git pull).
 
 Running Benchmark Itself:
+
 * runBenchmark.sh - run the Benchmark Web Application (accessible via local machine only)
 * runRemoteAccessibleBenchmark.sh - like the above but allows port 8443 to be accessible outside the machine Benchmark is running on.
+  
