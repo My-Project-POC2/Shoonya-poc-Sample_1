@@ -4,13 +4,10 @@ on:
   push:
     branches:
       - main
-      - master
-      - add-sbom-generation
 
   pull_request:
     branches:
       - main
-      - master
 
 jobs:
   sbom:
@@ -22,8 +19,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Fetch master branch
-        run: git fetch origin master:refs/remotes/origin/master
+      - name: Fetch main branch
+        run: git fetch origin main:refs/remotes/origin/main
 
       - name: Set up Java
         uses: actions/setup-java@v4
